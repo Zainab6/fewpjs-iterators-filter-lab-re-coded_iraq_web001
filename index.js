@@ -7,6 +7,6 @@ function findMatching(drivers,element){
 
 
 function fuzzyMatch(drivers,element){
-  let result = drivers.filter(driver => driver.toLowerCase().indexOf(element.startsWith()) === 0)
+  let result = drivers.filter(driver => driver.indexOf(element) === 0)
   return result
 }
